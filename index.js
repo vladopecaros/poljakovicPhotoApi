@@ -23,7 +23,7 @@ app.use('/', router);
 dbOptions = {useNewUrlParser: true, useUnifiedTopology: true}
 mongoose.connect(process.env.DB_URI, dbOptions)
 .then(()=>{
-    console.log('DataBase Connected Successfully');
+  //console.log('DataBase Connected Successfully');
 })
 .catch(err => console.error(err))
 
@@ -33,5 +33,5 @@ mongoose.connect(process.env.DB_URI, dbOptions)
 
 const port = process.env.PORT || 4000;
 const server = app.listen(port, ()=>{
-    console.log("Server running on port "+port);
+  //console.log("Server running on port "+port);
 })
